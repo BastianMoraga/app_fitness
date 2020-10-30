@@ -76,4 +76,10 @@ public class menu_act extends AppCompatActivity {
 
         startActivity(i);
     }
+
+    public void baseDatos(View view)
+    {
+        Intent i = new Intent(this, insumos_act.class);
+        startActivity(i);
+    }
 }

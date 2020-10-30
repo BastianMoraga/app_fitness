@@ -9,8 +9,8 @@
 
     <ViewFlipper
         android:id="@+id/slider"
-        android:layout_width="396dp"
-        android:layout_height="485dp"
+        android:layout_width="393dp"
+        android:layout_height="448dp"
         android:layout_marginStart="38dp"
         android:layout_marginEnd="38dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,20 +33,21 @@
         app:layout_constraintHorizontal_bias="0.13"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.761"
+        app:layout_constraintVertical_bias="0.779"
         app:srcCompat="@drawable/perfil_men" />
 
     <ImageButton
         android:id="@+id/imgbtnInsumos"
-        android:background="@android:color/transparent"
         android:layout_width="159dp"
         android:layout_height="56dp"
+        android:background="@android:color/transparent"
+        android:onClick="baseDatos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.936"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.761"
+        app:layout_constraintVertical_bias="0.779"
         app:srcCompat="@drawable/bd_men" />
 
     <ImageButton
@@ -60,7 +61,7 @@
         app:layout_constraintHorizontal_bias="0.13"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.902"
+        app:layout_constraintVertical_bias="0.92"
         app:srcCompat="@drawable/maps_men" />
 
     <ImageButton
@@ -74,7 +75,7 @@
         app:layout_constraintHorizontal_bias="0.936"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.902"
+        app:layout_constraintVertical_bias="0.92"
         app:srcCompat="@drawable/info_men" />
 
     <TextView
@@ -87,7 +88,7 @@
         app:layout_constraintHorizontal_bias="0.189"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.817" />
+        app:layout_constraintVertical_bias="0.828" />
 
     <TextView
         android:id="@+id/txtInsumos"
@@ -99,7 +100,7 @@
         app:layout_constraintHorizontal_bias="0.866"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.817" />
+        app:layout_constraintVertical_bias="0.828" />
 
     <TextView
         android:id="@+id/txtMaps"
@@ -111,7 +112,7 @@
         app:layout_constraintHorizontal_bias="0.216"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.95" />
+        app:layout_constraintVertical_bias="0.964" />
 
     <TextView
         android:id="@+id/txtInfo"
@@ -120,9 +121,9 @@
         android:text="Información"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintHorizontal_bias="0.833"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.95" />
+        app:layout_constraintVertical_bias="0.963" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
