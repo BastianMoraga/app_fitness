@@ -15,8 +15,8 @@ import Clases.AdminSQLiteOpenHelper;
 public class insumos_act extends AppCompatActivity {
 
     private EditText edCodigo, edNombre, edStock, edPrecio;
-    private AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "Fichero", null, 1);
-    private SQLiteDatabase db = admin.getWritableDatabase();
+    /*private AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "Fichero", null, 1);
+    private SQLiteDatabase db = admin.getWritableDatabase();*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,9 @@ public class insumos_act extends AppCompatActivity {
 
     public void  guardarInsumo(View view)
     {
+        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "Fichero", null, 1);
+        SQLiteDatabase db = admin.getWritableDatabase();
+
         if(!edCodigo.getText().toString().isEmpty())
         {
             ContentValues registro = new ContentValues();
@@ -52,6 +55,9 @@ public class insumos_act extends AppCompatActivity {
 
     public void motraraInsumos(View view)
     {
+        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "Fichero", null, 1);
+        SQLiteDatabase db = admin.getWritableDatabase();
+
         String codigo = edCodigo.getText().toString();
 
         if(!codigo.isEmpty())
@@ -77,6 +83,9 @@ public class insumos_act extends AppCompatActivity {
 
     public void eliminarInsumo(View view)
     {
+        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "Fichero", null, 1);
+        SQLiteDatabase db = admin.getWritableDatabase();
+
         String codigo = edCodigo.getText().toString();
 
         if (!codigo.isEmpty())
@@ -94,6 +103,9 @@ public class insumos_act extends AppCompatActivity {
 
     public void actualizarInsumo(View view)
     {
+        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "Fichero", null, 1);
+        SQLiteDatabase db = admin.getWritableDatabase();
+
         String codigo = edCodigo.getText().toString();
 
         ContentValues cont = new ContentValues();

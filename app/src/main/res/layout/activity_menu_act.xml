@@ -41,7 +41,7 @@
         android:layout_width="159dp"
         android:layout_height="56dp"
         android:background="@android:color/transparent"
-        android:onClick="baseDatos"
+        android:onClick="insumos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.936"
